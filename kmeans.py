@@ -34,7 +34,7 @@ def main():
     clusters_df = pd.DataFrame(clusters, index=distances_df['id'], columns=['label'])
 
     # Write distances to disk
-    clusters_df.to_csv(Path(args.output_dir) / f'{args.name}.kmeans.csv', index_label='id')
+    clusters_df.to_csv(Path(args.output_dir) / f'{args.name}.clusters.csv', index_label='id')
 
 
 if __name__ == "__main__":
